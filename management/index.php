@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Kiểm tra xem người dùng đã đăng nhập hay chưa
+// Kiểm tra xem người dùng đã đăng nhập hay chưa kiểm tra
 if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
     // Người dùng chưa đăng nhập, chuyển họ đến trang đăng nhập
     header('Location: login.php');
